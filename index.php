@@ -1,1 +1,1 @@
-<? php include_once('fundstar.html'); ?>
+<?php include_once('fundstar.html'); ?>
