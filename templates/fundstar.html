@@ -1,0 +1,273 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<link rel="apple-touch-icon" sizes="76x76" href="{% static 'img/apple-icon.png' %}">
+	<link rel="icon" type="image/png" href="{% static 'img/favicon.png' %}">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+	<title>Fundstar</title>
+
+	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+
+	<!--     Fonts and icons     -->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" />
+
+		<!-- CSS Files -->
+	<link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet" />
+	<link href="{% static 'css/material-kit.css' %}" rel="stylesheet" />
+	<link  href="{% static 'css/main.css' %}" rel="stylesheet">
+	<link href="{% static 'css/flickity.css' %}" media="all" rel="stylesheet" type="text/css">
+	<link href="{% static 'css/stack-interface.css' %}" media="all" rel="stylesheet" type="text/css">
+	<link href="{% static 'css/theme.css' %}" media="all" rel="stylesheet" type="text/css">
+	<link href="{% static 'css/custom.css' %}" media="all" rel="stylesheet" type="text/css">
+	<link href="{% static 'css/pricing.css' %}" rel="stylesheet">
+
+	<meta name="f3-site-verification" content="03379b9b16f90d92a8af2e031f3a4ad4">
+</head>
+
+<body class="landing-page">
+
+	    <div class="wrapper">
+	        <div class="header header-filter" style="background-image: url('https://images.unsplash.com/photo-1423655156442-ccc11daa4e99?crop=entropy&dpr=2&fit=crop&fm=jpg&h=750&ixjsv=2.1.0&ixlib=rb-0.3.5&q=50&w=1450');">
+	            <div class="container">
+	                <div class="row">
+						<div class="col-md-8 col-md-offset-2">
+							<h1 class="title" style="text-align:center;">"This is a very noisy world"</h1>
+							<p class="pull-right">...and Steve was right</p>
+		                    <br /><br>
+												<a href="#next" class="btn btn-danger btn-raised btn-lg" style="margin-left:35%">
+				 			 <i class="fa fa-bolt"> </i> Absolutely! <i class="fa fa-bomb"> </i>
+				 		 </a>
+						</div>
+	                </div>
+	            </div>
+	        </div>
+
+	<div  id="next" class="main main-raised">
+		<div class="container">
+			<div class="section text-center section-landing">
+				<div class="row">
+					<div class="col-md-8 col-md-offset-2">
+						<p  class="bigger line">That's why we are matching the best entrepreneurs with the best business Angels.</p>
+						<p class="bigger"> Because when two stars work together, magic happens.</p>
+					</div>
+				</div>
+				<div class="features">
+					<div class="row">
+
+						<div class="section text-center">
+							<h2 class="title">This is how it works</h2>
+							<h3>We have three players in scene - select your role</h3>
+
+							<div class="team">
+								<div class="row form-group product-chooser">
+									<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+										<div id="1" class="product-chooser-item">
+											<img src="{% static 'img/serial-entrepreneur.svg' %}" class="img-rounded col-xs-4 col-sm-4 col-md-12 col-lg-12" alt="Mobile and Desktop" style="height:8em">
+											<div class="col-xs-8 col-sm-8 col-md-12 col-lg-12">
+												<span class="title">Successful Entrepreneur(s) </span>
+												<span class="description">You have either sold a company (or more than one), done an IPO or doing well with your already grown company.</span>
+												<input type="radio" name="product" value="mobile_desktop" checked="checked">
+											</div>
+											<div class="clear"></div>
+										</div>
+									</div>
+
+									<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+										<div id="2" class="product-chooser-item">
+											<img src="{% static 'img/entrepreneur.svg' %}" class="img-rounded col-xs-4 col-sm-4 col-md-12 col-lg-12" alt="Desktop" style="height:10em">
+											<div class="col-xs-8 col-sm-8 col-md-12 col-lg-12">
+												<span class="title">(Star) Founder</span>
+												<span class="description">Entrepreneur with incredible execution, idea, team, traction (whatever) - but no network to tackle.</span>
+												<input type="radio" name="product" value="desktop">
+											</div>
+											<div class="clear"></div>
+										</div>
+									</div>
+
+									<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+										<div id="3" class="product-chooser-item">
+											<img src="{% static 'img/angel.svg' %}" class="img-rounded col-xs-4 col-sm-4 col-md-12 col-lg-12" alt="Mobile" style="height:8em">
+											<div class="col-xs-8 col-sm-8 col-md-12 col-lg-12">
+												<span class="title">(Star) Angel</span>
+												<span class="description">You are ultra helpful to startups, have invested in many, probably you have been an entrepreneur yourself, and you have done really well.</span>
+												<input type="radio" name="product" value="mobile">
+											</div>
+											<div class="clear"></div>
+										</div>
+									</div>
+
+								</div>
+							</div>
+					 </div>
+
+
+				<div id="successful-entrepreneur" class="hidden">
+
+					 <div class="section text-center surrounding-margin">
+							 <h2>So - What's the deal?</h2>
+							 <div class="row">
+
+
+							 	<div class="col-md-3 col-md-offset-1">
+									<img src="{% static 'img/serial-entrepreneur.svg' %}" class="img-rounded col-xs-4 col-sm-4 col-md-12 col-lg-12 pull-left" alt="Mobile and Desktop" style="height:15em">
+							 	</div>
+
+								<div class="col-md-6">
+									<p class="margin-tp margin-left lefted">Serial entrepreneurs like you are screened to know you're truly awesome. Once accepted, you can refer up to 2 entrepreneurs to us a month (not cummulative). These entrepreneurs send their
+		 						 pitch, short business plan executive summary and a video (or whatever they have), and we screen through them just selecting the <i>crême de la crême</i>. </p>
+
+		 						 <p class="margin-left lefted">Then we match successful pitches to the best angels' interests - and every time we strike a deal - we give you a gift :). And the best thing of all is it's going to take you no more than 5 minutes and you'll be helping out a fellow entrepreneur.</p>
+								</div>
+							 </div>
+						 </div>
+
+						 <div class="row">
+						 		<div class="col-md-6 col-md-offset-3">Please apply to <br>
+						 			<a href="{% url 'founder' %}" class="btn btn-raised btn-lg">Help them out!</a>
+						 		</div>
+						 </div>
+					</div>
+
+
+					<div id="founder" class="hidden">
+
+						 <div class="section text-center surrounding-margin">
+								 <h2>So - What's the deal?</h2>
+								 <div class="row">
+
+
+									<div class="col-md-3 col-md-offset-1">
+										<img src="{% static 'img/entrepreneur.svg' %}" class="img-rounded col-xs-4 col-sm-4 col-md-12 col-lg-12 pull-left" alt="Mobile and Desktop" style="height:15em">
+									</div>
+
+									<div class="col-md-6">
+										<p class="margin-tp margin-left lefted">You have been referred by a successful entrepreneur. That means, you have to be really great, a star founder. Congrats! </p>
+
+									 <p class="margin-left lefted">Now it's your turn to shine - you have to submit your pitch, short business plan, executive summary, a video (or whatever you have).</p>
+
+									 <p class="margin-left lefted">Then, we are going to screen you - and if you are really great - we'll send your details and pitch to the right angels - and let the magic happen.</p>
+
+									 <p class="margin-left lefted">And once you got investment, we take a 2% to cover expenses, people and to give a gift to the entrepreneur that has referred you :)</p>
+
+									</div>
+								 </div>
+							 </div>
+
+							 <div class="row">
+									<div class="col-md-6 col-md-offset-3" style="font-weight:600">If you want to apply - you gotta wait, this is a passive approach.<br>
+										<!-- <a href="#" class="btn btn-raised btn-lg">Become successful!</a> -->
+									</div>
+							 </div>
+					</div>
+
+					<div id="angel" class="hidden">
+
+						 <div class="section text-center surrounding-margin">
+								 <h2>So - What's the deal?</h2>
+								 <div class="row">
+
+
+									<div class="col-md-3 col-md-offset-1">
+										<img src="{% static 'img/angel.svg' %}" class="img-rounded col-xs-4 col-sm-4 col-md-12 col-lg-12 pull-left" alt="Mobile and Desktop" style="height:15em">
+									</div>
+
+									<div class="col-md-6">
+										<p class="margin-tp margin-left lefted">Warm intros are great - why don't we maximize them? You time is really precious and you never know if the founder(s) you're going to meet are going to be above the treshold...We can do better.</p>
+
+										<p class="margin-left lefted">You've worked a lot to be where you're now - it's time someone else do some work for you. We do due diligence, we find out which founders are really great, check them out, find the best deals and all that boring stuff.</p>
+
+										<p class="margin-left lefted"> Once we find one of those stars we will send them your way.</p>
+
+									 <p class="margin-left lefted">Then we match successful pitches to the best angels' interests - and every time we strike a deal - we give you a gift :). And the best thing of all is it's going to take you no more than 5 minutes and you'll be helping out a fellow entrepreneur.</p>
+									</div>
+								 </div>
+							 </div>
+
+							 <div class="row">
+									<div class="col-md-6 col-md-offset-3">Please apply to <br>
+										<a href="{% url 'angel' %}" class="btn btn-raised btn-lg">Get Fed!</a>
+									</div>
+							 </div>
+					</div>
+
+
+
+
+
+				</div>
+			</div>
+			</div>
+		</div>
+	</div>
+
+	<footer class="footer">
+		<div class="container">
+			<nav class="pull-left">
+				<ul>
+					<li>
+						<a href="https://goo.gl/forms/G8E5jvcHSW1LV9rf1">Wanna help out?</a>
+					</li>
+				</ul>
+			</nav>
+			<img src="{% static 'img/logo.svg' %}" height="50px" alt="" style="padding-top:1%;">
+			<div class="copyright pull-right">
+				&copy; 2017, made with the <i class="fa fa-heart heart"></i>
+			</div>
+		</div>
+	</footer>
+
+</body>
+
+<!--   Core JS Files   -->
+
+
+<script src="{% static 'js/jquery.min.js' %}" type="text/javascript"></script>
+<script src="{% static 'js/bootstrap.min.js' %}" type="text/javascript"></script>
+<script src="{% static 'js/material.min.js' %}"></script>
+
+<!--  Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
+<script src="{% static 'js/nouislider.min.js' %}" type="text/javascript"></script>
+
+<!--  Plugin for the Datepicker, full documentation here: http://www.eyecon.ro/bootstrap-datepicker/ -->
+<script src="{% static 'js/bootstrap-datepicker.js' %}" type="text/javascript"></script>
+
+<!-- Control Center for Material Kit: activating the ripples, parallax effects, scripts from the example pages etc -->
+<script src="{% static 'js/material-kit.js' %}" type="text/javascript"></script>
+
+<script type="text/javascript">
+$(function(){
+	$('div.product-chooser').not('.disabled').find('div.product-chooser-item').on('click', function(){
+		$(this).parent().parent().find('div.product-chooser-item').removeClass('selected');
+		$(this).addClass('selected');
+		$(this).find('input[type="radio"]').prop("checked", true);
+	});
+});
+</script>
+
+<script type="text/javascript">
+	$('#1').click(function (){
+			$('#founder').addClass('hidden');
+			$('#angel').addClass('hidden');
+			$('#successful-entrepreneur').removeClass('hidden');
+	});
+
+	$('#2').click(function (){
+			$('#successful-entrepreneur').addClass('hidden');
+			$('#angel').addClass('hidden');
+			$('#founder').removeClass('hidden');
+		});
+
+	$('#3').click(function (){
+			$('#successful-entrepreneur').addClass('hidden');
+			$('#founder').addClass('hidden');
+			$('#angel').removeClass('hidden');
+		});
+</script>
+
+</html>

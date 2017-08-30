@@ -1,0 +1,8 @@
+venv
+*.pyc
+staticfiles
+.env
+bin/
+include/
+lib/
+pip-selfcheck.json

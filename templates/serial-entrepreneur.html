@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+{% load static %}
+{# {% load crispy_forms_tags %}#}
+
+{% block title %}
+{{ title }}
+{% endblock title %}
+
+
+{% block head %}
+<style media="screen">
+  label{
+    text-align: left;
+    margin-top: 3%;
+    float: left;
+  }
+
+</style>
+{% endblock head %}
+
+
+{% block page_title %}
+  Onboarding
+{% endblock page_title%}
+
+
+{% block content %}
+<form class="" id="formed" action="" method="POST" enctype="multipart/form-data" accept-charset="utf-8">{% csrf_token %}
+  <div class="form-group">
+    <p>Yes, the same boring stuff again... :)</p>
+  {{ form }}
+   <input class="btn btn-primary margin-bottom send" type="submit" id="123" style="margin-top: 5%;"/>
+ </div>
+</form>
+
+{% endblock content %}
+
+
+{% block scripts %}
+<script type="text/javascript">
+   $('#123').click(function (){
+     $('#formed').css('display', 'none');
+   });
+</script>
+{% endblock scripts %}
